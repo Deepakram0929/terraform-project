@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "one" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "deepakawskey"
+  key_name      = "deepuaws"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1a"
 
@@ -25,7 +25,7 @@ EOF
 resource "aws_instance" "two" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "deepakawskey"
+  key_name      = "deepuaws"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1b"
 
@@ -45,7 +45,7 @@ EOF
 resource "aws_instance" "three" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "deepakawskey"
+  key_name      = "deepuaws"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1a"
 
@@ -57,7 +57,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "deepakawskey"
+  key_name      = "deepuaws"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1b"
 
