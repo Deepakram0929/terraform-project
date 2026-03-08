@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "one" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "rahamabc"
+  key_name      = "deepakawskey"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1a"
 
@@ -14,7 +14,7 @@ resource "aws_instance" "one" {
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
-echo "hai all this is my app created by terraform infrastructure by raham sir server-1" > /var/www/html/index.html
+echo "hai all this is my app created by terraform infrastructure by deepak sir server-1" > /var/www/html/index.html
 EOF
 
   tags = {
@@ -25,7 +25,7 @@ EOF
 resource "aws_instance" "two" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "rahamabc"
+  key_name      = "deepakawskey"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1b"
 
@@ -34,7 +34,7 @@ resource "aws_instance" "two" {
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
-echo "hai all this is my website created by terraform infrastructure by raham sir server-2" > /var/www/html/index.html
+echo "hai all this is my website created by terraform infrastructure by deepak sir server-2" > /var/www/html/index.html
 EOF
 
   tags = {
@@ -45,7 +45,7 @@ EOF
 resource "aws_instance" "three" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "rahamabc"
+  key_name      = "deepakawskey"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1a"
 
@@ -57,7 +57,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami           = "ami-02dfbd4ff395f2a1b"
   instance_type = "t2.micro"
-  key_name      = "rahamabc"
+  key_name      = "deepakawskey"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1b"
 
@@ -92,7 +92,7 @@ resource "aws_security_group" "five" {
 }
 
 resource "aws_s3_bucket" "six" {
-  bucket = "devopsbyrahamterraserverbucket9988oo9988"
+  bucket = "deepakramportfoliobucket"
 }
 
 variable "user_names" {
